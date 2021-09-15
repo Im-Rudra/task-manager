@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.bg-smoke {
+    background-color: #ebebeb;
+}
+
+li {
+    list-style: none;
+}
+
+.task-group {
+    background-color: #e5b8ff;
+    min-height: calc(100vh - 369px);
+}
+
+.task {
+    position: relative;
+}
+
+.id {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: 14px;
+}

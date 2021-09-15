@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- fontawesome css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- custom css -->
+    <link rel="stylesheet" href="dist/CSS/styles.css">
+    <title>Task Manager</title>
+</head>
+<body class="bg-light container">
+    <header>
+        <nav class="tm-navbar py-2 px-3 my-3 rounded-3 bg-smoke d-flex justify-content-between">
+            <h3 class="text-dark">Task Manager</h3>
+            <ul class="m-0">
+                <li class="d-inline"><button class="btn btn-dark filter-complete">Filter By Completed</button></li>
+                <li class="d-inline ms-2"><button class="btn btn-dark filter-incomplete">Filter By Inomplete</button></li>
+                <li class="d-inline ms-2"><button class="btn btn-outline-dark cancel-filter">Cancel filters</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="add-task-container bg-smoke p-4 my-3 rounded-3 shadow-sm">
+            <form class="task-form">
+                <div class="row row-cols-2">
+                    <div class="col">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text"><i class="fas fa-tasks"></i></span>
+                            <input type="text" class="form-control task-name" placeholder="Name of Task" required>
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            <input type="text" class="form-control assigned-name" placeholder="Assign To" required>
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text"><i class="fas fa-calendar-day"></i></span>
+                            <input type="date" class="form-control task-date" value="2021-09-15" min="2021-09-15">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-floating h-100 pb-3">
+                            <textarea class="form-control h-100 task-description" placeholder="Leave a Description" id="floatingTextarea" required></textarea>
+                            <label for="floatingTextarea">Description</label>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-danger" type="submit">Add Task</button>
+            </form>
+        </div>
+
+        <div class="task-group p-4 my-3 rounded-3">
+            <!-- js content -->
+        </div>
+    </main>
+
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <!-- custom js -->
+    <script src="dist/JS/script.js"></script>
+
+    <script src="test.js"></script>
+</body>
+</html>
